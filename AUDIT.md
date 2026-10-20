@@ -17,6 +17,8 @@
 | Run logs pulled | **0** |
 | Failures / warnings / errors found | **0** |
 
+**Plain finding: no Actions activity anywhere on this account.** No repository defines any workflow, so no workflow has ever run and there are no logs to inspect.
+
 ---
 
 ## Per-repository findings
@@ -60,7 +62,7 @@
   - Filesystem: `.github/workflows/` does not exist on `master`.
   - Branch check: `master` is the sole branch, so no workflow file can exist on an unlisted branch.
 - **Runs:** None. No workflows → no runs → **no logs to inspect**.
-- **Log findings:** No failures, or errors exist, because no log data exists at all.
+- **Log findings:** No failures, warnings, or errors exist, because no log data exists at all.
 - **Plain finding: NO WORKFLOWS, NO RUNS.** This repository has no GitHub Actions CI set up whatsoever. (Forked repositories have Actions disabled by default, which is the expected state here.)
 
 ### 4. HeziLiu/awesome-chatgpt-prompts-zh
@@ -72,7 +74,7 @@
 - **Workflows defined:** 0
   - Actions API: `GET /repos/HeziLiu/awesome-chatgpt-prompts-zh/actions/workflows` → `total_count: 0`
   - Filesystem: `.github/workflows/` does not exist on `main`.
-  **Branch check:** `main` is the sole branch, so no workflow file can exist on an unlisted branch.
+  - Branch check: `main` is the sole branch, so no workflow file can exist on an unlisted branch.
 - **Runs:** None. No workflows → no runs → **no logs to inspect**.
 - **Log findings:** No failures, warnings, or errors exist, because no log data exists at all.
-- **Plain finding: NO WORKFLOWS, NO RUNS.** This repository has no everything Actions CI set up whatsoever. (Forked repositories have Actions disabled by default, which is the expected state here.)
+- **Plain finding: NO WORKFLOWS, NO RUNS.** This repository has no GitHub Actions CI set up whatsoever. (Forked repositories have Actions disabled by default, which is the expected state here.)
